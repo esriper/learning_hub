@@ -1,0 +1,10 @@
+name: first_workflow #key value should be name
+on: workflow_dispatch #on means trigger, workflow_dispatch means your running the workflow manually meaning it waits for the user to trigger the work manually
+jobs: # does not take a value immediately 
+  first_job:
+   runs-on: ubuntu-latest #is a reserved key (name,on,steps,run)
+   steps:
+    - name: printgreeting
+      run: echo "Hello world"
+    - name: print goodbye
+      run: echo "good bye"
